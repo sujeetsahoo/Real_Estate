@@ -172,6 +172,7 @@
 		
 	</header>
 	<!-- End Main Header -->
+	 
 	
 	<!-- Slider One -->
 	<section class="banner-one">
@@ -189,8 +190,8 @@
 						
 							<!-- Tab Btns -->
 							<ul class="tab-btns tab-buttons clearfix">
-								<li data-tab="#prod-buy" class="tab-btn active-btn">buy</li>
-								<li data-tab="#prod-rent" class="tab-btn">rent</li>
+								<li data-tab="#prod-buy" class="tab-btn active-btn">Find your dream property</li>
+								<!-- <li data-tab="#prod-rent" class="tab-btn">rent</li> -->
 								<!-- <li data-tab="#prod-sell" class="tab-btn">sell</li> -->
 							</ul>
 							
@@ -207,25 +208,25 @@
 													
 													<div class="col-lg-6 col-md-4 col-sm-6 form-group">
 														<label>Location</label>
-														<select name="country" class="custom-select-box">
-															<option></option>
-															<option>GURGAON</option>
-															<option>SOUTH OF GURGAON </option>
-															<option>NEW GURGAON</option>
-															<option>Goa</option>
-															<option>Ayodhya</option>
+														<select id="locationFilter" name="country" class="custom-select-box">
+															<!-- <option></option> -->
+															<option value="">All Location</option>
+															<option value="gurgaon">GURGAON</option>
+															<option value="south-of-gurgaon">SOUTH OF GURGAON </option>
+															<option value="new-gurgaon">NEW GURGAON</option>
+															<option value="goa">Goa</option>
+															<option value="ayodhya">Ayodhya</option>
 														</select>
 													</div>
 													
 													<div class="col-lg-6 col-md-4 col-sm-6 form-group">
 														<label>Property Types</label>
-														<select name="country" class="custom-select-box">
-															<option></option>
-															<option>Residential Properties</option>
-															<option>Commercial Propertise</option>
-															<option>Industrial & Warehouse Spaces</option>
-															
-														</select>
+														<select id="typeFilter" class="custom-select-box">
+															<option value="">All Property Types</option>
+															<option value="residential">Residential Properties</option>
+															<option value="commercial">Commercial Propertise</option>
+															<option value="industrial">Industrial & Warehouse Spaces</option>
+														  </select>
 													</div>
 													
 													<!-- <div class="col-lg-4 col-md-4 col-sm-12 form-group">
@@ -241,7 +242,7 @@
 												</div>
 												<!-- Button Box -->
 												<div class="button-box">
-													<button class="submit-btn flaticon-search-interface-symbol"></button>
+													<button type="button" class="submit-btn flaticon-search-interface-symbol"></button>
 												</div>
 											</form>
 										</div>
@@ -356,6 +357,20 @@
 		</div>
 	</section>
 	<!-- End Main Slider Section -->
+
+	<header>
+		<h1>Real Estate Inquiry Portal</h1>
+		<p>Choose an option below to start your property journey</p>
+	  </header>
+	
+	  <!-- Main Action Buttons with Icons -->
+	  <div class="action-buttons">
+		<button data-form="form1"><i class="fas fa-home"></i>Sell Property</button>
+		<button data-form="form2"><i class="fas fa-search"></i>Buy Property</button>
+		<button data-form="form3"><i class="fas fa-building"></i>Rent Out Property</button>
+		<button data-form="form4"><i class="fas fa-user"></i>Looking for Rental</button>
+	  </div>
+	
 	
 	<!-- Story One -->
 	<section class="story-one">
@@ -366,7 +381,7 @@
 				<div class="story-one_image-column col-lg-6 col-md-12 col-sm-12">
 					<div class="story-one_image-outer">
 						<div class="story-one_image wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<img src="assets/images/resource/trust.jpg" alt="" />
+							<img src="assets/images/resource/trust.jpeg" alt="" />
 						</div>
 						<div class="story-one_experiance">
 							<div class="story-one_experiance-inner">
@@ -446,7 +461,7 @@
 							<div class="city-block_one">
 								<div class="city-block_one-inner">
 									<div class="city-block_one-image">
-										<img src="assets/images/resource/city11.jpeg" alt="" />
+										<img src="assets/images/resource/city1.jpg" alt="" />
 										<div class="city-block_one-overlay">
 											<div class="city-block_one-content">
 												<!-- <div class="city-block_one-title">50+ Properties</div> -->
@@ -553,20 +568,22 @@
 				<div class="property-block_one col-lg-4 col-md-6 col-sm-12">
 					<div class="property-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="property-block_one-image">
-							<div class="property-block_one-title">Featuerd</div>
+							<!-- <div class="property-block_one-title">Featuerd</div> -->
 							<a href="property-detail.html"><img src="assets/images/resource/property1.jpg" alt="" /></a>
 						</div>
 						<div class="property-block_one-content">
-							<div class="property-block_one-location"><i class="flaticon-maps-and-flags"></i>Pasadena 809b-2, Oklahoma</div>
-							<h4 class="property-block_one-heading"><a href="property-detail.html">Super deluxe bed room near sea beech</a></h4>
+							<div class="property-block_one-location"><i class="flaticon-maps-and-flags"></i>SEC. 33 Sohna road,Gurgaon</div>
+							<h4 class="property-block_one-heading"><a href="property-detail.html">Daxin Vista 
+								Builder
+								 Signature global </a></h4>
 							<ul class="property-block_one-info">
-								<li><span><img src="assets/images/icons/bed.svg" alt="" /></span>4 Beds</li>
-								<li><span><img src="assets/images/icons/bath.svg" alt="" /></span>2 Bathrooms</li>
-								<li><span><img src="assets/images/icons/square.svg" alt="" /></span>6x8 m²</li>
+								<li><span><img src="assets/images/icons/bed.svg" alt="" /></span>3 BHK</li>
+								<li><span><img src="assets/images/icons/square.svg" alt="" /></span>1550 sq ft</li>
+								<li><span><img src="assets/images/icons/rupee-icon.svg" alt="" /></span>1.85 CR to 2 CR</li>
 							</ul>
 							<div class="d-flex justify-content-between align-items-center flex-wrap">
-								<div class="property-block_one-price">$2,400 <span>/month</span></div>
-								<a class="property-block_one-heart" href="property-detail.html"><img src="assets/images/icons/heart.svg" alt="" /></a>
+								<div class="property-block_one-price">Possession <span>/Jan 28 </span></div>
+								<!-- <a class="property-block_one-heart" href="property-detail.html"><img src="assets/images/icons/heart.svg" alt="" /></a> -->
 							</div>
 						</div>
 					</div>
@@ -576,20 +593,20 @@
 				<div class="property-block_one col-lg-4 col-md-6 col-sm-12">
 					<div class="property-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="property-block_one-image">
-							<div class="property-block_one-off">20% off</div>
+							<!-- <div class="property-block_one-off">20% off</div> -->
 							<a href="property-detail.html"><img src="assets/images/resource/property2.jpg" alt="" /></a>
 						</div>
 						<div class="property-block_one-content">
-							<div class="property-block_one-location"><i class="flaticon-maps-and-flags"></i>Pasadena 809b-2, Oklahoma</div>
-							<h4 class="property-block_one-heading"><a href="property-detail.html">Super deluxe bed room near sea beech</a></h4>
+							<div class="property-block_one-location"><i class="flaticon-maps-and-flags"></i>SEC. 36 Sohna road,Gurgaon</div>
+							<h4 class="property-block_one-heading"><a href="property-detail.html">Signature global park 2</a></h4>
 							<ul class="property-block_one-info">
-								<li><span><img src="assets/images/icons/bed.svg" alt="" /></span>4 Beds</li>
-								<li><span><img src="assets/images/icons/bath.svg" alt="" /></span>2 Bathrooms</li>
-								<li><span><img src="assets/images/icons/square.svg" alt="" /></span>6x8 m²</li>
+								<li><span><img src="assets/images/icons/bed.svg" alt="" /></span>2Bhk to 3 Bhk </li>
+								<li><span><img src="assets/images/icons/square.svg" alt="" /></span>745sq ft to 1550 sq ft   </li>
+								<li><span><img src="assets/images/icons/rupee-icon.svg" alt="" /></span></li>
 							</ul>
 							<div class="d-flex justify-content-between align-items-center flex-wrap">
-								<div class="property-block_one-price">$2,400 <span>/month</span></div>
-								<a class="property-block_one-heart" href="property-detail.html"><img src="assets/images/icons/heart.svg" alt="" /></a>
+								<div class="property-block_one-price">Possession <span>/Jan 28</span></div>
+								<!-- <a class="property-block_one-heart" href="property-detail.html"><img src="assets/images/icons/heart.svg" alt="" /></a> -->
 							</div>
 						</div>
 					</div>
@@ -599,20 +616,21 @@
 				<div class="property-block_one col-lg-4 col-md-6 col-sm-12">
 					<div class="property-block_one-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="property-block_one-image">
-							<div class="property-block_one-title">Featuerd</div>
+							<!-- <div class="property-block_one-title">Featuerd</div> -->
 							<a href="property-detail.html"><img src="assets/images/resource/property3.jpg" alt="" /></a>
 						</div>
 						<div class="property-block_one-content">
-							<div class="property-block_one-location"><i class="flaticon-maps-and-flags"></i>Pasadena 809b-2, Oklahoma</div>
-							<h4 class="property-block_one-heading"><a href="property-detail.html">Super deluxe bed room near sea beech</a></h4>
+							<div class="property-block_one-location"><i class="flaticon-maps-and-flags"></i>Sector 59 Gurgaon</div>
+							<h4 class="property-block_one-heading"><a href="property-detail.html">4S Au 	rrum Builder
+								  </a></h4>
 							<ul class="property-block_one-info">
-								<li><span><img src="assets/images/icons/bed.svg" alt="" /></span>4 Beds</li>
-								<li><span><img src="assets/images/icons/bath.svg" alt="" /></span>2 Bathrooms</li>
-								<li><span><img src="assets/images/icons/square.svg" alt="" /></span>6x8 m²</li>
+								<li><span><img src="assets/images/icons/bed.svg" alt="" /></span>3 Bhk</li>
+								<li><span><img src="assets/images/icons/square.svg" alt="" /></span>2400 Sq.Ft. to 2624 sq.ft. </li>
+								<li><span><img src="assets/images/icons/rupee-icon.svg" alt="" /></span>19000/sq.ft. </li>
 							</ul>
 							<div class="d-flex justify-content-between align-items-center flex-wrap">
-								<div class="property-block_one-price">$2,400 <span>/month</span></div>
-								<a class="property-block_one-heart" href="property-detail.html"><img src="assets/images/icons/heart.svg" alt="" /></a>
+								<div class="property-block_one-price">Possession <span>/2028</span></div>
+								<!-- <a class="property-block_one-heart" href="property-detail.html"><img src="assets/images/icons/heart.svg" alt="" /></a> -->
 							</div>
 						</div>
 					</div>
@@ -733,9 +751,9 @@
 								<div class="row clearfix">
 									<div class="testimonial-block_one-image_column col-lg-6 col-md-12 col-sm-12">
 										<div class="testimonial-block_one-image">
-											<img src="assets/images/resource/testimonial-1.png" alt="" />
+											<img src="assets/images/resource/client.jpg" alt="" />
 											<div class="testimonial-block_one-content">
-												<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video testimonial-block_one-play"><span class="flaticon-play-1"><i class="ripple"></i></span></a>
+												<!-- <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video testimonial-block_one-play"><span class="flaticon-play-1"><i class="ripple"></i></span></a> -->
 												<h4 class="testimonial-block_one-name">Leslie Alexander <span>Online Broker</span></h4>
 											</div>
 										</div>
@@ -769,9 +787,9 @@
 								<div class="row clearfix">
 									<div class="testimonial-block_one-image_column col-lg-6 col-md-12 col-sm-12">
 										<div class="testimonial-block_one-image">
-											<img src="assets/images/resource/testimonial-1.png" alt="" />
+											<img src="assets/images/resource/client.jpg" alt="" />
 											<div class="testimonial-block_one-content">
-												<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video testimonial-block_one-play"><span class="flaticon-play-1"><i class="ripple"></i></span></a>
+												<!-- <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video testimonial-block_one-play"><span class="flaticon-play-1"><i class="ripple"></i></span></a> -->
 												<h4 class="testimonial-block_one-name">Leslie Alexander <span>Online Broker</span></h4>
 											</div>
 										</div>
@@ -805,9 +823,9 @@
 								<div class="row clearfix">
 									<div class="testimonial-block_one-image_column col-lg-6 col-md-12 col-sm-12">
 										<div class="testimonial-block_one-image">
-											<img src="assets/images/resource/testimonial-1.png" alt="" />
+											<img src="assets/images/resource/client.jpg" alt="" />
 											<div class="testimonial-block_one-content">
-												<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video testimonial-block_one-play"><span class="flaticon-play-1"><i class="ripple"></i></span></a>
+												<!-- <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video testimonial-block_one-play"><span class="flaticon-play-1"><i class="ripple"></i></span></a> -->
 												<h4 class="testimonial-block_one-name">Leslie Alexander <span>Online Broker</span></h4>
 											</div>
 										</div>
@@ -1005,7 +1023,9 @@
 		<div class="footer-bottom">
 			<div class="auto-container">
 				<div class="d-flex justify-content-between align-items-center flex-wrap">
-					<div class="copyright">Copyright &copy; 2025<a href="#"> zeero-brokerage Realtor</a> All Rights Reserved</div>
+					<div class="copyright">
+						
+					</div>
 					
 					<!-- Social Box -->
 					<div class="footer_socials">
@@ -1148,6 +1168,355 @@
 	</svg>
 </div>
 
+<!-- popup form -->
+<!-- Popup Form 1: Sell Property -->
+<div class="popup-form" id="form1">
+    <div class="popup-content">
+      <span class="close-btn" data-close="form1">&times;</span>
+      <h2><i class="fas fa-home"></i> Sell Your Property</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" required>
+
+        <label>Property Type:</label>
+        <select required>
+          <option value="">Select</option>
+          <option>Residential</option>
+          <option>Commercial</option>
+          <option>Office</option>
+        </select>
+
+        <label>Project Name/Address:</label>
+        <input type="text">
+
+        <label>Configuration:</label>
+        <input type="text" placeholder="e.g., 2 BHK">
+
+        <label>Size (sq. ft.):</label>
+        <input type="number">
+
+        <label>Floor:</label>
+        <input type="text">
+
+        <label>Facing:</label>
+        <select>
+          <option value="">Select</option>
+          <option>East</option>
+          <option>West</option>
+          <option>North</option>
+          <option>South</option>
+        </select>
+
+        <label>Age of Property:</label>
+        <input type="text">
+
+        <label>Ready to Move?</label>
+        <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+
+        <label>Expected Price:</label>
+        <input type="text">
+
+        <label>Cheque:</label>
+        <input type="text">
+
+        <label>Additional Information:</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Popup Form 2: Buy Property -->
+  <div class="popup-form" id="form2">
+    <div class="popup-content">
+      <span class="close-btn" data-close="form2">&times;</span>
+      <h2><i class="fas fa-search"></i> Buy Property</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" required>
+
+        <label>Preferred Location:</label>
+        <input type="text">
+
+        <label>Budget:</label>
+        <input type="text">
+
+        <label>Property Type:</label>
+        <select required>
+          <option value="">Select</option>
+          <option>Residential</option>
+          <option>Commercial</option>
+        </select>
+
+        <label>Configuration:</label>
+        <input type="text" placeholder="e.g., 3 BHK">
+
+        <label>Additional Requirements:</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Popup Form 3: Rent Out Property -->
+  <div class="popup-form" id="form3">
+    <div class="popup-content">
+      <span class="close-btn" data-close="form3">&times;</span>
+      <h2><i class="fas fa-building"></i> Rent Out Property</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" required>
+
+        <label>Property Type:</label>
+        <select required>
+          <option value="">Select</option>
+          <option>Residential</option>
+          <option>Commercial</option>
+        </select>
+
+        <label>Location:</label>
+        <input type="text">
+
+        <label>Configuration:</label>
+        <input type="text" placeholder="e.g., 1 BHK">
+
+        <label>Rent Amount:</label>
+        <input type="text">
+
+        <label>Available From:</label>
+        <input type="date">
+
+        <label>Furnishing:</label>
+        <select>
+          <option value="">Select</option>
+          <option>Furnished</option>
+          <option>Semi-Furnished</option>
+          <option>Unfurnished</option>
+        </select>
+
+        <label>Additional Information:</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Popup Form 4: Looking for Rental -->
+  <div class="popup-form" id="form4">
+    <div class="popup-content">
+      <span class="close-btn" data-close="form4">&times;</span>
+      <h2><i class="fas fa-user"></i> Looking for Rental</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" required>
+
+        <label>Preferred Location:</label>
+        <input type="text">
+
+        <label>Budget Range:</label>
+        <input type="text">
+
+        <label>Type of Property:</label>
+        <select>
+          <option value="">Select</option>
+          <option>1 BHK</option>
+          <option>2 BHK</option>
+          <option>3 BHK</option>
+          <option>Studio</option>
+        </select>
+
+        <label>Move-in Date:</label>
+        <input type="date">
+
+        <label>Additional Requirements:</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <style>
+    .popup1 {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 50px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .popup-content1 {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+      margin: 5% auto;
+      padding: 0;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 900px;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+      .popup-content1 {
+        flex-direction: row;
+      }
+
+      .popup-image1, .popup-text1 {
+        flex: 1;
+      }
+
+      .popup-image1 img {
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    .popup-image1 img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .popup-text1 {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .popup-text1 h2 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .popup-text1 p {
+      color: #fceae9;
+      font-size: 16px;
+    }
+
+    .close-btn1 {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 28px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      background: none;
+      border: none;
+    }
+
+    .close-btn1:hover {
+      color: #f1c40f;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Popup -->
+<div class="popup1" id="realEstatePopup">
+  <div class="popup-content1">
+    <button class="close-btn1" onclick="closePopup()">&times;</button>
+    <div class="popup-image1">
+      <img src="assets/images/resource/popup.webp" alt="0% Brokerage Offer">
+    </div>
+    <div class="popup-text1">
+      <h2>Buy Your Dream Home at 0% Brokerage!</h2>
+      <p>Say goodbye to high brokerage fees! Discover your perfect home with us and enjoy zero brokerage on all property deals. Don’t miss this exclusive opportunity.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Show popup automatically when the page loads
+  window.onload = function() {
+    setTimeout(function() {
+      document.getElementById("realEstatePopup").style.display = "block";
+    }, 1000); // 1 second delay after page load
+  };
+
+  function closePopup() {
+    document.getElementById("realEstatePopup").style.display = "none";
+  }
+</script>
+
+
+
+
+
+
+<script>
+	document.querySelector('.submit-btn').addEventListener('click', function (e) {
+	  e.preventDefault(); // This stops form from submitting
+	
+	  const location = document.getElementById('locationFilter').value;
+	  const type = document.getElementById('typeFilter').value;
+	
+	  // Redirect to the property list page with filters
+	  const url = `property.html?location=${encodeURIComponent(location)}&type=${encodeURIComponent(type)}`;
+	  window.location.href = url;
+	});
+
+	// popup
+
+	window.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll('[data-form]');
+      const closeButtons = document.querySelectorAll('[data-close]');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const formId = button.dataset.form;
+          const form = document.getElementById(formId);
+          if (form) {
+            form.style.display = 'block';
+          } else {
+            console.error(`No form found with ID: ${formId}`);
+          }
+        });
+      });
+
+      closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const formId = button.dataset.close;
+          const form = document.getElementById(formId);
+          if (form) {
+            form.style.display = 'none';
+          } else {
+            console.error(`No form found with ID to close: ${formId}`);
+          }
+        });
+      });
+    });
+</script>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
