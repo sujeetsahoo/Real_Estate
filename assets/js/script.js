@@ -953,6 +953,7 @@
    search btn script
    ========================================================================== */
  
+   
 //    window.addEventListener('DOMContentLoaded', function () {
 // 	const params = new URLSearchParams(window.location.search);
 // 	const locationFilter = params.get('location')?.toLowerCase() || '';
