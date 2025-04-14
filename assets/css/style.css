@@ -737,107 +737,136 @@
 /*** 
 
 ====================================================================
-	Cities One
+	pop up for property
 ====================================================================
 
 ***/
+header {
+	text-align: center;
+	padding: 0px 10px 10px;
+	background-color: #fff;
+  }
 
-.app-one{
-	position:relative;
-	padding:100px 0px 70px;
-}
+  header h1 {
+	font-size: 2.2rem;
+	color: #e50914;
+	margin-bottom: -10px;
+	margin-top: 10px;
+  }
+  
 
-.app-one_content-column{
-	position:relative;
-	margin-bottom:30px;
-}
+  header p {
+	font-size: 1rem;
+	color: #555;
+	
+  }
 
-.app-one_content{
-	position:relative;
-	padding-top:65px;
-}
+  .action-buttons {
+	text-align: center;
+	margin: 0px 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+  }
 
-.app-one_buttons{
-	position:relative;
-	margin-top:40px;
-}
+  .action-buttons button {
+	padding: 12px 25px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	background-color: #e50914;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	transition: background-color 0.3s ease, transform 0.2s;
+  }
 
-.app-one_buttons a{
-	position:relative;
-	margin-right:20px;
-	display:inline-block;
-	transition:all 500ms ease;
-	-moz-transition:all 500ms ease;
-	-webkit-transition:all 500ms ease;
-	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-}
+  .action-buttons button:hover {
+	background-color: #c40812;
+	transform: scale(1.05);
+  }
 
-.app-one_buttons a:hover{
-	opacity:0.70;
-	filter: grayscale(100%);
-}
+  .action-buttons button i {
+	margin-right: 10px;
+  }
 
-.app-one p{
-	margin-bottom:20px;
-	padding-right:80px;
-	color:rgba(var(--color-two-rgb), 0.70);
-}
+  .popup-form {
+	display: none;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+  }
 
-.app-one_image-column{
-	position:relative;
-	margin-bottom:30px;
-}
+  .popup-content {
+	background: #ffffff;
+	width: 90%;
+	max-width: 600px;
+	margin: 5% auto;
+	padding: 25px;
+	border-radius: 15px;
+	position: relative;
+	max-height: 90vh;
+	overflow-y: auto;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  }
 
-.app-one_image{
-	position:relative;
-	text-align:right;
-}
+  .popup-content h2 {
+	margin-top: 0;
+	color: #e50914;
+  }
 
-.app-one_experiance{
-	position:absolute;
-	left:15px;
-	top:40%;
-	z-index:1;
-	width:206px;
-	height:197px;
-	font-size:72px;
-	line-height:72px;
-	font-weight:700;
-	border-radius:8px;
-	padding:20px 25px 25px;
-	border:8px solid #fcfcfc;
-	color:var(--main-color);
-	-webkit-animation: icon-bounce 0.8s ease-out infinite;
-    animation: icon-bounce 0.8s ease-out infinite;
-	background-color:var(--white-color);
-	box-shadow:0px 5px 35px rgba(0,0,0,0.10);
-}
+  .popup-content label {
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+  }
 
-.app-one_experiance i{
-	position:relative;
-	font-size:14px;
-	font-weight:400;
-	line-height:1em;
-}
+  .popup-content input,
+  .popup-content select,
+  .popup-content textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
 
-.app-one_experiance .rating{
-	position:relative;
-	font-size:16px;
-	line-height:1em;
-	font-weight:500;
-	margin-top:20px;
-	color:var(--color-two);
-}
+  .popup-content button[type="submit"] {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #e50914;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
 
+  .popup-content button[type="submit"]:hover {
+	background-color: #c40812;
+  }
 
-.app-one_experiance .rating span{
-	position:relative;
-	font-weight:600;
-	font-size:14px;
-	color:var(--color-six);
-}
+  .close-btn {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 22px;
+	cursor: pointer;
+	color: #e50914;
+  }
 
+  @media (max-width: 600px) {
+	.action-buttons button {
+	  flex: 1 1 100%;
+	  justify-content: center;
+	}
+  }
 /*** 
 
 ====================================================================
